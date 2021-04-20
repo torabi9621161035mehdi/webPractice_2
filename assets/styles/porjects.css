@@ -1,0 +1,39 @@
+.title {
+    padding: 4rem 0 1rem 0;
+}
+
+.projects {
+    list-style: none;
+}
+
+.projects li {
+    background: burlywood;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+}
+
+.projects li {
+    background: burlywood;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+}
+
+.projects li>.project-title {
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 1rem;
+}
+
+.projects li>.discp>p:first-child {
+    font-size: 18px;
+    padding: 1rem 0;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 480px) {
+    .title {
+        padding: 4rem 0 1rem 0;
+        text-align: center;
+    }
+}

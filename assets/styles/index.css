@@ -1,0 +1,147 @@
+*,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* make cointainer size for pages */
+.container {
+    width: 1380px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/* navbar styles */
+nav {
+    background-color: white;
+    box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.068);
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    list-style: none;
+}
+
+nav ul li {
+    font-weight: bold;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+/* main info */
+main {
+    margin: 1rem 0;
+}
+
+.main-info {
+    box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.068);
+    border-radius: 5px;
+    display: flex;
+}
+
+
+.main-info>img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: contain;
+}
+
+.main-info>.body {
+    padding: 1rem;
+}
+
+.main-info>.body h1 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+.main-info>.body p {
+    font-size: 18px;
+}
+
+.main-info>.body>.description {
+    padding: 1rem 0;
+}
+
+.main-info>.body>.description>p {
+    font-size: 14px;
+}
+
+/* end main info */
+/* skill */
+.skills {
+    margin: 1rem 0;
+}
+
+.skills .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills .boxes .box {
+    width: 20rem;
+    box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.068);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+}
+
+.skills .boxes .box>img {
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    object-fit: contain;
+    height: 15rem;
+}
+
+/* end skills */
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+
+    nav {
+        background-color: white;
+        box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.068);
+        border-radius: 5px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        list-style: none;
+    }
+
+    .main-info {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .main-info>img {
+        margin: 0 auto;
+    }
+
+
+    .skills .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+    }
+
+    .skills .boxes .box {
+        margin: .2rem auto;
+    }
+}
